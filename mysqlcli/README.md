@@ -1,4 +1,4 @@
-Docker image for MYSQL Command Line Interface (CLI)
+#Docker image for MYSQL Command Line Interface (CLI)
 
 Usage: Run `docker run -it --rm harveypham/mysqlcli` as a replacement for `mysql`. For examples:
 
