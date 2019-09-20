@@ -1,2 +1,4 @@
+#!/bin/bash
+
 docker tag $IMAGE_NAME aws-cli:$DOCKER_TAG
 docker push aws-cli:$DOCKER_TAG
