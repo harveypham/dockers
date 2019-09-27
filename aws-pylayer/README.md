@@ -4,7 +4,7 @@ Creating aws lambda layer for Python 3.6
 
 #### Usage
 ```
-python -it --rm harveypham/aws-pylayer -o [output] packages...
+docker -it --rm harveypham/aws-pylayer -o [output] packages...
 
     -o          Specify output zip file name. The default is package.zip.
                 Note that filename is saved in /workdir on docker image
@@ -23,13 +23,17 @@ Optionally, user can use docker -v option to mapping a host directory to */workd
 #### Alias (optional)
 To save typing, user can define an alias as follow:
 
-`alias pylayer="python -it --rm harveypham/aws-pylayer"`
+`alias pylayer="docker -it --rm harveypham/aws-pylayer"`
 
 or
 
-`alias pylayer="python -it --rm -v ~/pylayer:/workdir harveypham/aws-pylayer"`
+`alias pylayer="docker -it --rm -v ~/pylayer:/workdir harveypham/aws-pylayer"`
 
 #### Examples
 Creating a layer of mysql-connector-python:
 
-`python -it --rm -v ~/workdir:/workdir harveypham/aws-pylayer -o mysql-connector-python`
+`docker -it --rm -v ~/workdir:/workdir harveypham/aws-pylayer mysql-connector-python`
+
+If alias was defined:
+
+`pylayer mysql-connector-python`
