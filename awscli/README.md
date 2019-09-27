@@ -1,6 +1,6 @@
 # AWS CLI
 
-Usage:
+#### Usage
 
 Passing credentials from Environment variables:
 
@@ -9,3 +9,11 @@ Passing credentials from Environment variables:
 Passing credentials from config file:
 
 `docker run -it --rm -v ~/.aws:/root/.aws harveypham/awscli args ...`
+
+#### Alias
+
+To save typing, define the following alias:
+
+`alias aws="docker run -it --rm -v ~/.aws:/root/.aws harveypham/awscli"`
+
+Run `aws configure` to save credentials to ~/.aws first.

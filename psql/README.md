@@ -1,13 +1,13 @@
 # psql (PostgreSQL CLI)
 
-##### Usage
+#### Usage
 ```
 docker run -it --rm harveypham/psql args
 
     args    psql arguments (see psql manual for more details)
 ```
 
-##### Alias
+#### Alias
 To save typing, define this alias:
 
 `alias psql="docker run -it --rm harveypham/psql"`

@@ -2,14 +2,14 @@
 
 
 
-##### Usage
+#### Usage
 ```
 docker run -it --rm harveypham/mysqlcli args
 
     args    arguments for mysql client (see mysql client manual for more details)
 ```
 
-##### Alias
+#### Alias
 To save typing, define this alias:
 
 `alias mysql="docker run -it --rm harveypham/mysqlcli"`
