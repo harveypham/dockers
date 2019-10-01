@@ -5,3 +5,4 @@ RUN apk update && \
     rm /var/cache/apk/*
 
 ENTRYPOINT ["psql"]
+CMD ["--help"]
