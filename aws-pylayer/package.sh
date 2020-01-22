@@ -3,7 +3,7 @@
 function install_packages() {
     local destin="$1"
     mkdir -p "$destin"
-    pip3 install "${@:2}" -t "$destin"
+    pip-3.6 install "${@:2}" -t "$destin"
 }
 
 function rm_dup() {
